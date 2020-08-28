@@ -54,10 +54,6 @@ body {
   color: #000;
 }
 
-.features-list > li {
-  margin-right: 25px;
-}
-
 .features-list a:hover {
   text-decoration: none;
   color: #000;
@@ -66,11 +62,38 @@ body {
 
 .features-list > li > a {
   border-bottom: 2px solid transparent;
-  padding: 15px 10px;
+  padding: 16px;
   transition: border-bottom-color 0.3s ease;
 }
 
 
 .features-list > li > a:hover {
-  border-bottom-color: #000;
+  border-bottom-color: #191919;
+}
+
+.features-list > li > a:active {
+  background-color: #191919;
+  color: #fff;
+  opacity: 0.7;
+
+}
+
+.services-list {
+   padding: 0;
+   list-style-type: none;
+   position: absolute;
+   z-index: 1;
+   right: 0.1px;
+   top: 38px;
+}
+
+.services-list a {
+  display: inline-block;
+  padding: 10px 15px;
+  width: 125px;
+}
+
+.services-wrapper-item {
+  position: relative;
+  z-index: 1;
 }
