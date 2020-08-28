@@ -1,3 +1,40 @@
+@font-face {
+  font-family: "Product Sans";
+  src: url("../fonts/ProductSans-Bold.woff2") format("woff2"),
+      url("../fonts/ProductSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("../fonts/ProductSans-Italic.woff2") format("woff2"),
+      url("../fonts/ProductSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("../fonts/ProductSans-BoldItalic.woff2") format("woff2"),
+      url("../fonts/ProductSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("../fonts/ProductSans-Regular.woff2") format("woff2"),
+      url("../fonts/ProductSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 *,
 *::before,
 *::after {
@@ -15,6 +52,11 @@ body {
 
 .navbar-wrapper {
   width: 100%;
+  box-shadow:0px 4px 20px rgba(0, 0, 0, 0.1);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 }
 
 .nav-bar {
@@ -61,8 +103,8 @@ body {
 }
 
 .features-list > li > a {
-  border-bottom: 2px solid transparent;
-  padding: 16px;
+  border-bottom: 3px solid transparent;
+  padding: 16px 16px 13px 16px;
   transition: border-bottom-color 0.3s ease;
 }
 
@@ -79,21 +121,60 @@ body {
 }
 
 .services-list {
-   padding: 0;
+   padding: 16px 0;
    list-style-type: none;
    position: absolute;
    z-index: 1;
-   right: 0.1px;
-   top: 38px;
+   right: 50%;
+   transform: translateX(50%);
+   top: 35px;
+   border-radius: 5px;
+   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+   position: absolute;
+   z-index: 1;
+   display: none;
+}
+
+.services-list a:hover {
+  background-color: #00BAFC;
+  color: #fff;
+}
+
+.services-list a:active {
+  opacity: 60%;
+  background-color: #00BAFC;
 }
 
 .services-list a {
   display: inline-block;
-  padding: 10px 15px;
-  width: 125px;
+  padding: 8px 16px;
+  width: 130px;
 }
 
 .services-wrapper-item {
   position: relative;
   z-index: 1;
+}
+
+.services-wrapper-item:hover .services-list {
+  display: block;
+}
+.phone-number {
+  border: 3px solid transparent;
+  transition: border-color 0.3s ease;
+  border-radius: 5px;
+  padding: 8px 16px;
+  background-color: #00BAFC;
+  color: #fff;
+  text-decoration:none;
+  border-radius:5px;
+  font-size: 15px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.phone-number:hover {
+  border-color: #00BAFC;
+  background-color: #fff;
+  color: #00BAFC;
 }
