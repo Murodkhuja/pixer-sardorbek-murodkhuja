@@ -48,19 +48,20 @@ html {
 body {
   font-family: "Product sans", "Arial", sans-serif;
   box-sizing: border-box;
+  margin-top: 60px;
 }
 
 .navbar-wrapper {
   width: 100%;
   box-shadow:0px 4px 20px rgba(0, 0, 0, 0.1);
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   background-color: #fff;
 }
 
 .nav-bar {
-  width: 1100px;
+  width: 1148px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -90,15 +91,17 @@ body {
   padding: 0;
   list-style-type: none;
   display: flex;
+
 }
+
 .features-list a {
   text-decoration: none;
-  color: #000;
+  color: #222;
 }
 
 .features-list a:hover {
   text-decoration: none;
-  color: #000;
+  color: #222;
 
 }
 
@@ -109,7 +112,8 @@ body {
 }
 
 
-.features-list > li > a:hover {
+.features-list > li > a:hover,
+.features-list > li:hover > a {
   border-bottom-color: #191919;
 }
 
@@ -153,13 +157,15 @@ body {
 
 .services-wrapper-item {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .services-wrapper-item:hover .services-list {
   display: block;
 }
+
 .phone-number {
+  margin-left: 16px;
   border: 3px solid transparent;
   border-radius: 5px;
   padding: 8px 16px;
@@ -170,7 +176,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   white-space: nowrap;
-  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  transition: border-color 0.3s ease,
 }
 
 .phone-number:hover {
@@ -185,4 +191,53 @@ body {
   /* border-color: rgba(0, 186, 252, 0.6); */
   background-color: rgba(0, 186, 252, 0.6);
   color: #fff;
+}
+
+.container {
+  max-width: 1148px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero{
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  justify-content: space-between;
+  background-color: #fff;
+
+}
+
+.content-wrapper {
+  width: 465px;
+}
+
+.hero-title {
+  line-height: 130%;
+  font-size: 30px;
+  margin: 0;
+}
+
+.hero-discription {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  line-height: 24px;
+
+}
+
+.main-button {
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #00BAFC;
+  border-radius:5px;
+  display: inline-block;
+}
+
+.hero-video {
+  border: none;
+  width: 458px;
+  height: 258px;
 }
