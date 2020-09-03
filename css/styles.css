@@ -514,8 +514,6 @@ only screen and (                min-resolution: 2dppx) {
 
 .third-section {
   background-color: #00BAFC;
-  width: 1300px;
-  height: 543px;
   padding-top: 56px;
   padding-bottom: 64px;
 }
@@ -580,11 +578,26 @@ only screen and (                min-resolution: 2dppx) {
 
 .site-links-list {
   color: #fff;
+  transition: color 0.3s ease;
+}
+
+.site-links-list a:hover {
+  color: #00BAFC;
+}
+
+.site-links-list a:active {
+  color: #00BAFC;
+  opacity: 0.6;
 }
 
 .socials-list {
   color: #fff;
   padding: 0;
+}
+
+.socials-list a:hover {
+  color: #00BAFC;
+
 }
 
 .site-links-list {
@@ -619,3 +632,4 @@ only screen and (                min-resolution: 2dppx) {
   width: 100px;
   justify-content: space-between;
 }
+
